@@ -70,6 +70,11 @@
     </p>
 
     <form>
+      action="https://docs.google.com/forms/d/e/1HLL5aKCZcgT39BoE-bjdxCZI_k67GULAzKlToS3Zxj0/formResponse"
+      method="POST"
+      target="hidden_iframe"
+      onsubmit="setTimeout(function(){window.location.href='result.html';},500);"
+    >
       <div class="question">
         <h2>Q1. 今回の旅で一番大切にしたいことは？</h2>
         <label><input type="radio" name="purpose"> とにかく癒されたい</label>
@@ -113,8 +118,7 @@
     どんなことでも大丈夫です。
   </p>
   <textarea
-    name="freeText"
-    rows="5"
+    name=“entry.698721081”     rows="5"
     placeholder="例：ヨーロッパの街をゆっくり歩きたい。観光地より、現地のカフェや日常を感じたいです。"
     style="
       width:100%;
@@ -131,6 +135,7 @@
       <button type="button">診断結果を見る</button>
 　　　　</a>
     </form>
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
   </div>
 </body>
 </html>
